@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr-code</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div id="title" class="gradient-background">
+    <h1 id="level-title">GENERATE YOUR OWN QR HERE</h1>
+    <div class="topnav">
+        <form action="/submit" method="POST">
+           <label for="URL">URL:</label>
+            <input type="text" name="URL" placeholder="enter your url here" required>
+            <input class="but" type="submit" value="Submit">
+          </form>
+      </div>
+      <div class="image232">
+        <img src="<%= imageUrl %>" alt="QR Code">
+    </div>
+      <div id="qrcode"></div>
+    </div>
+</body>
+</html>
